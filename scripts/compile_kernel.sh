@@ -31,7 +31,7 @@ einfo "Setting latest kernel: ${LAST_KERNEL}"
 eselect kernel set ${LAST_KERNEL}
 eselect kernel list
 
-ebegin "Rebuilding modules..."
+ebegin "Rebuilding packages that install kernel modules..."
 nice /root/module-rebuild.sh
 eend $?
 
